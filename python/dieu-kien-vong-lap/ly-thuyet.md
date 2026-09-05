@@ -87,21 +87,7 @@ while a < 100:
   print()
   a += 1
 ```
-100(d) range(20, 5, -1) tạo dãy từ 20, giảm 1, và kết thúc trước số 5
-
-(e) range(20, 5, -3) tạo dãy từ 20, giảm 3, và kết thúc trước số 5
-
-(f) range(10, 5) tạo dãy từ 10 đến 6
-
-(g) range(0) tạo dãy từ 0 đến 0
-
-(h) range(10, 101, 10) tạo dãy từ 10, cộng thêm 10, và kết thúc trước số 101
-
-(i) range(10, -1, -1) tạo dãy từ 10, giảm 1, và kết thúc trước số -1
-
-(j) range(-3, 4) tạo dãy từ -3 đến 3
-
-(k) range(0, 10, 1) tạo dãy từ 0,cộng thêm 1, và kết thúc trước số 10
+2000
 
 ## Giải thích cách chạy của dòng lệnh range
 (a) range(5) tạo dãy từ 0 đến 4
@@ -114,9 +100,9 @@ while a < 100:
 
 (e) range(20, 5, -3) tạo dãy từ 20, giảm 3, và kết thúc trước số 5
 
-(f) range(10, 5) tạo dãy từ 10 đến 6
+(f) range(10, 5) không có giá trị
 
-(g) range(0) tạo dãy từ 0 đến 0
+(g) range(0) không có giá trị
 
 (h) range(10, 101, 10) tạo dãy từ 10, cộng thêm 10, và kết thúc trước số 101
 
