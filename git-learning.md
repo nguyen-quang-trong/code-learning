@@ -30,8 +30,11 @@
       * Nếu có SSH key: git clone git@github.com:<username>/<repository>.git
 
   + Upload nhánh lên Github: git push -u <remote> <branch>
-  + Đồng bộ repo với Github: git pull <remote> <branch>
+  + Đồng bộ repo với Github (vẫn giữ local và có thể bị xung đột): git pull <remote> <branch>
     * Cần đồng bộ trước khi push để tránh xung đột
+  + Đồng bộ repo với Github (ép local giống Github):
+    * git fetch origin (GitHub → cập nhật thông tin Git, chưa sửa file local)
+    * git reset --hard origin/main (ép)
 
 - Tương tác với repo:
   + Thêm repo vào cửa sổ hiện tại của vscode: code -a <tên thư mục>
