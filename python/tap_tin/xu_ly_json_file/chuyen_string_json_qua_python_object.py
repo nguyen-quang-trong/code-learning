@@ -1,6 +1,8 @@
+# Cho string Json có cấu trúc sau: '{"ma":"nv1", "age":50, "ten":"Trần Duy Thanh"}'. Hãy viết mã lệnh chuyển đổi qua Python Object.
+
 import json 
-jsonString =  '{ "ma":"nv1", "age":50, "ten":"Trần Duy Thanh"}'
-dataObject=json.loads(jsonString) 
+jsonString = '{"ma":"nv1", "age":50, "ten":"Trần Duy Thanh"}'
+dataObject=json.loads(jsonString)
 print(dataObject) 
 print("Mã=",dataObject["ma"]) 
 print("Tên=",dataObject["age"]) 

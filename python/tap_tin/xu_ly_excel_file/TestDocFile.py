@@ -1,3 +1,5 @@
+# Sử dụng thư viện openpyxl để đọc file excel đã được lưu từ file TestLuuFile.py
+
 from openpyxl import load_workbook 
 import os
 
