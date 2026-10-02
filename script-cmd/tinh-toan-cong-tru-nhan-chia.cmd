@@ -1,3 +1,5 @@
+REM Viết chương trình tính toán cộng trừ nhân chia hai số thập phân
+
 set /p a=Nhap a= 
 set /p b=Nhap b (b!=0) = 
 if %b% EQU 0 Goto Error

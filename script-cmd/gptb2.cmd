@@ -1,3 +1,5 @@
+REM Viết chương trình giải phương trình bậc 2
+
 set /p a=Nhap he so truoc x mu 2 (he so phai khac 0): 
 if %a% EQU 0 Goto Error
 set /p b=Nhap he so truoc x: 

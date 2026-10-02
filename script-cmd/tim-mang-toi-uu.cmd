@@ -1,3 +1,5 @@
+REM Viết chương trình tìm mạng tối ưu
+
 set /p SoMayCuaDoanhNghiep=Nhap so may cua doanh nghiep: 
 set /a SoMayCuaDoanhNghiep=%SoMayCuaDoanhNghiep%+2
 set HostID=2

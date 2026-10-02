@@ -1,3 +1,5 @@
+REM Viết chương trình khai căn bậc hai, dùng giải thuật tìm kiếm tuyến tính.
+
 Set /p SoCanKhaiCan=Nhap so can khai can: 
 if %SoCanKhaiCan% LSS 0 Goto ERROR1
 Set /a kq=0

@@ -1,3 +1,5 @@
+REM Viết chương trình chuyển đổi một số từ cơ số n sang cơ số k
+
 set /p a=Nhap so can chuyen: 
 set /p n=Nhap co so cua so can chuyen:
 set SoCanKiemTra=%a%
