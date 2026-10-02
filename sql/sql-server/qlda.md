@@ -1,4 +1,4 @@
-### Cơ sở dữ liệu quản lý dự án có sẵn phục vụ việc học: [QLDA.zip](https://drive.google.com/file/d/1oWgGa-41np3MNjKWXB4QYvmBOegvD1FU/view?usp=sharing)
+### Cơ sở dữ liệu quản lý đề án có sẵn phục vụ việc học: [QLDA.zip](https://drive.google.com/file/d/1oWgGa-41np3MNjKWXB4QYvmBOegvD1FU/view?usp=sharing)
 
 - **Câu 1:** Tìm các nhân viên làm việc ở phòng số 4
     
