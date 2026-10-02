@@ -1,9 +1,7 @@
-"""
-Viết chương trình cho phép: 
-- Viết lệnh khởi tạo ngẫu nhiên n phần tử cho list 
-- Gọi k là một số nhập từ bàn phím , hãy xóa tất cả các phần tử có giá trị k tồn tại trong list 
-- Kiểm tra list có đối xứng hay không
-"""
+# Viết chương trình cho phép: 
+# - Viết lệnh khởi tạo ngẫu nhiên n phần tử cho list.
+# - Gọi k là một số nhập từ bàn phím , hãy xóa tất cả các phần tử có giá trị k tồn tại trong list.
+# - Kiểm tra list có đối xứng hay không.
 
 from random import randrange
 def KhoiTaoDSNgauNhien(n):

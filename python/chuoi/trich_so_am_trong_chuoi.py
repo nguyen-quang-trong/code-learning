@@ -1,7 +1,5 @@
-"""
-Viết một hàm đặt tên là NegativeNumberInStrings(str). Hàm này có đối số truyền vào là một chuỗi bất kỳ, Hãy viết lệnh để xuất ra các số nguyên âm trong chuỗi. 
-Ví dụ: Nếu nhập vào chuỗi “abc-5xyz-12k9l--p” thì hàm phải xuất ra được 2 số nguyên âm đó là -5 và -12 
-"""
+# Viết một hàm đặt tên là NegativeNumberInStrings(str). Hàm này có đối số truyền vào là một chuỗi bất kỳ, Hãy viết lệnh để xuất ra các số nguyên âm trong chuỗi. 
+# Ví dụ: Nếu nhập vào chuỗi “abc-5xyz-12k9l--p” thì hàm phải xuất ra được 2 số nguyên âm đó là -5 và -12.
 
 def NegativeNumberInStrings(str):
     s=""

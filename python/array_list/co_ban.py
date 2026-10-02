@@ -1,12 +1,10 @@
-"""
-Viết chương trình cho phép: 
-- Khởi tạo list 
-- Thêm phần tử vào list 
-- Nhập k, kiểm tra k xuất hiện bao nhiêu lần trong list 
-- Tính tổng các số nguyên tố trong list 
-- Sắp xếp 
-- Xóa list
-"""
+# Viết chương trình cho phép: 
+# - Khởi tạo list.
+# - Thêm phần tử vào list.
+# - Nhập k, kiểm tra k xuất hiện bao nhiêu lần trong list.
+# - Tính tổng các số nguyên tố trong list.
+# - Sắp xếp.
+# - Xóa list.
 
 def NhapDS(l,n):
     for i in range(n):

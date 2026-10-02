@@ -1,6 +1,5 @@
-"""
-Nhập vào 2 giá trị a, b và phép toán ‘+’, ‘-’, ‘*’, ‘/’ . Hãy xuất kết quả theo đúng phép toán đã nhập.
-"""
+# Nhập vào 2 giá trị a, b và phép toán ‘+’, ‘-’, ‘*’, ‘/’ . Hãy xuất kết quả theo đúng phép toán đã nhập.
+
 a=int(input("a= "))
 b=int(input("b= "))
 pt=str(input("Phep toan: "))

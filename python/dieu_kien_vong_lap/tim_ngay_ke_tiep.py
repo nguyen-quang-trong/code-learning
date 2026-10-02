@@ -1,6 +1,5 @@
-"""
-Nhập vào một ngày (ngày, tháng, năm). Tìm ngày kế sau ngày vừa nhập (ngày/tháng/năm).
-"""
+# Nhập vào một ngày (ngày, tháng, năm). Tìm ngày kế sau ngày vừa nhập (ngày/tháng/năm).
+
 ngay=int(input("ngay= "))
 thang=int(input("thang= "))
 nam=int(input("nam= "))

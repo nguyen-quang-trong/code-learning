@@ -1,8 +1,6 @@
-"""
-Nhập 2 matrix A , B. 
-Cộng 2 matrix 
-Viết hàm tính matrix hoán vị➔áp dụng để tìm cho A , B 
-"""
+# Nhập 2 matrix A, B.
+# Cộng 2 matrix.
+# Viết hàm tính matrix hoán vị➔áp dụng để tìm cho A, B
 
 def Nhap(a,d,c):
     for i in range(d):

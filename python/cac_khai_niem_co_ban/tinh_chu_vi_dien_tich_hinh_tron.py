@@ -1,3 +1,5 @@
+# Nhập bán kính đường tròn r. Tính và xuất chu vi, diện tích đường tròn tương ứng.
+
 import math
 try:
     r=float(input("Mời bạn nhập bán kính hình tròn: "))

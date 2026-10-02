@@ -1,3 +1,5 @@
+# Nhập vào 1 list có N số ngẫu nhiên KHÔNG TRÙNG NHAU.
+
 from random import randrange
 
 n=int(input("Nhap n= "))

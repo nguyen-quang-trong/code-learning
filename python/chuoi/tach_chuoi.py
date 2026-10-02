@@ -1,11 +1,9 @@
-"""
-Cho 1 Chuỗi như sau “5;7;8;-2;8;11;13;9;10” (có thể nhập bất kỳ từ bàn phím ) 
-- xuất các chữ số trên các dòng riêng biệt 
-- Xuất có bao nhiêu chữ số chẵn  
-- Xuất có bao nhiêu số âm  
-- Xuất có bao nhiêu chữ số nguyên tố 
-- Tính giá trị trung bình 
-"""
+# Cho 1 Chuỗi như sau “5;7;8;-2;8;11;13;9;10” (có thể nhập bất kỳ từ bàn phím ) 
+# - xuất các chữ số trên các dòng riêng biệt 
+# - Xuất có bao nhiêu chữ số chẵn  
+# - Xuất có bao nhiêu số âm  
+# - Xuất có bao nhiêu chữ số nguyên tố 
+# - Tính giá trị trung bình
 
 def ktSoChan(so):
     if abs(so%2)==0:return True

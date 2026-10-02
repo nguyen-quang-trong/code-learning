@@ -1,3 +1,6 @@
+# Nhập một số n có tối đa 2 chữ số. Hãy cho biết cách đọc ra dạng chữ.
+# Vd: n=35 => Ba mươi lăm; n=5 => năm.
+
 n=int(input("n= "))
 if n>99: print("Số không hợp lệ")
 else:

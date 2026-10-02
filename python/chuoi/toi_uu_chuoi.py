@@ -1,3 +1,5 @@
+# Một Chuỗi được gọi là tối ưu khi: Không chứa các khoảng trắng dư thừa, các từ cách nhau bởi một khoảng trắng.
+
 def ToiUuChuoi(s):
     tmp=""
     for i in range(len(s)):

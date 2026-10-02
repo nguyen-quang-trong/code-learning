@@ -4,7 +4,10 @@ số nguyên (int), số thực (float), kiểu logic (boolean), chuỗi ký t�
 ### Trình bày các loại ghi chú trong Python.
 Ghi chú dòng: #
 
-Ghi chú nhiều dòng: “”” … “””
+Ghi chú nhiều dòng: “”” … “””, dùng khi:
+- Ghi chú dài, nhiều dòng ngay trong code mà vẫn giữ nguyên định dạng.
+- Viết docstring cho hàm, lớp, module để IDE, help(), Sphinx đọc được.
+- Tạo chuỗi văn bản dài có xuống dòng thật, ví dụ SQL, HTML, JSON mẫu, hoặc thông báo nhiều dòng.
 
 ### Trình bày ý nghĩa toán tử /, //, % , **, and, or, is.
 /: chia thường
