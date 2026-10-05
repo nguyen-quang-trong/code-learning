@@ -1020,3 +1020,119 @@
         where mahd='6'
         --Không thể thực thi dòng lệnh trên vì nếu xóa sẽ ảnh hưởng đến dữ liệu trong bảng khác.
         ```
+
+# Bài tập ràng buộc toàn vẹn
+
+Dựa trên lược đồ CSDL Quản lý bán sách (QLBS) được mô tả như sau:
+
+- LoaiSach(MaLoai char(4), TenLoai nvarchar(25))
+- NhanVien(MaNV char(4), HoLot nvarchar(25), TenNV nvarchar(10), Phai nvarchar(3), NgaySinh Smalldatetime, DiaChi nvarchar(40))
+- Sach(MaSach char(4), TenSach nvarchar(40), TacGia nvarchar(20), MaLoai char(4), DonGia Int, SLTon Smallint)
+- HoaDon(MaHD char(5), NgayBan Date, MaNV char(4))
+- CTHD (MaHD char(5), MaSach char(4), SoLuong Tinyint)
+
+Hãy xác định loại ràng buộc toàn vẹn, bối cảnh, biểu diễn bằng ngôn ngữ hình thức, bảng tầm ảnh hưởng của ràng buộc bên dưới.
+
+- **R1:** “Mỗi hóa đơn phải có ít nhất một chi tiết hóa đơn"
+    
+    
+    - Loại ràng buộc: Liên bộ, liên quan hệ.
+    - Bối cảnh: HoaDon, CTHD
+    - Biểu diễn bằng ngôn ngữ hình thức:
+        
+        $$
+        \begin{split}
+        \forall t\in HoaDon\big(\exist s\in CTHD(t.MaHD=s.MaHD)\big)
+        \end{split}
+        $$
+        
+    
+    - Bảng tầm ảnh hưởng:
+        
+        
+        |  | Thêm | Xóa | Sửa |
+        | --- | --- | --- | --- |
+        | HoaDon | + | + | + (MaHD) |
+        | CTHD | + | + | + (MaHD) |
+- **R2:** “Số lượng tồn của mỗi mã sách không được nhỏ hơn 5"
+    
+    
+    - Loại ràng buộc: Miền giá trị
+    - Bối cảnh: Sach
+    - Biểu diễn bằng ngôn ngữ hình thức:
+        
+        $$
+        \begin{split}
+        \forall t\in Sach(t.SLTon>=5)
+        \end{split}
+        $$
+        
+    
+    - Bảng tầm ảnh hưởng:
+        
+        
+        |  | Thêm | Xóa | Sửa |
+        | --- | --- | --- | --- |
+        | Sach | + | + | +(SLTon) |
+- **R3:** “Mã sách trong chi tiết hóa đơn phải thuộc danh mục sách"
+    
+    
+    - Loại ràng buộc: Tham chiếu
+    - Bối cảnh: Sach, CTHD
+    - Biểu diễn bằng ngôn ngữ hình thức:
+        
+        $$
+        \begin{split}
+        \forall t\in CTHD\big(\exist s\in Sach(t.MaSach=s.MaSach)\big)
+        \end{split}
+        $$
+        
+    
+    - Bảng tầm ảnh hưởng:
+        
+        
+        |  | Thêm | Xóa | Sửa |
+        | --- | --- | --- | --- |
+        | Sach | - | + | +(MaSach) |
+        | CTHD | + | - | +(MaSach) |
+- **R4:** “Tên loại sách là duy nhất"
+    
+    
+    - Loại ràng buộc: Liên bộ
+    - Bối cảnh: LoaiSach
+    - Biểu diễn bằng ngôn ngữ hình thức:
+        
+        $$
+        \begin{split}
+        \forall t1,t2\in LoaiSach(t1\not=t2\land t1.TenLoai\not=t2.TenLoai)
+        \end{split}
+        $$
+        
+    
+    - Bảng tầm ảnh hưởng:
+        
+        
+        |  | Thêm | Xóa | Sửa |
+        | --- | --- | --- | --- |
+        | LoaiSach | + | - | +(TenLoai) |
+- **R5:** “Số lượng sách trong mỗi hóa đơn phải nhỏ hơn số lượng tổn"
+    
+    
+    - Loại ràng buộc: Liên thuộc tính, liên quan hệ
+    - Bối cảnh: Sach, CTHD
+    - Biểu diễn bằng ngôn ngữ hình thức:
+        
+        $$
+        \begin{split}
+        \forall t\in CTHD\big(\exist s\in Sach(t.MaSach=s.MaSach\land t.SoLuong<s.SLTon)\big)
+        \end{split}
+        $$
+        
+    
+    - Bảng tầm ảnh hưởng:
+        
+        
+        |  | Thêm | Xóa | Sửa |
+        | --- | --- | --- | --- |
+        | Sach | - | + | +(MaSach, SLTon) |
+        | CTHD | + | - | +(MaSach, SLTon) |
