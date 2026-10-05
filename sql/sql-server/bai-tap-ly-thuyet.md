@@ -229,7 +229,7 @@
 
 ## Bài 2
 
-<!-- ![Ở câu g, chữ “C” được thay đổi thành chữ “R”](https://res.cloudinary.com/rsaokywc/image/upload/v1790924818/csdl-dsqh.webp) -->
+![alt img](https://res.cloudinary.com/rsaokywc/image/upload/v1790924818/csdl-dsqh.webp)
 > Ở câu g, chữ “C” được thay đổi thành chữ “R”
 
 - **Câu a**
@@ -405,7 +405,6 @@
     
 - **Câu 2:** Tạo tất cả các ràng buộc tham chiếu (khóa ngoại)
     
-    
     | Thuộc tính | Kiểu dữ liệu | Diễn giải |
     | --- | --- | --- |
     | TEN | chuỗi (25) | Họ tên sinh viên |
@@ -421,12 +420,7 @@
     | NAMHOC | chuỗi (10) | Năm học |
     | GV | chuỗi (25) | Tên giáo viên giảng dạy |
     
-    <aside>
-    📌
-    
     **Ràng buộc:**
-    
-    ---
     
     - SINHVIEN:
         - ten, khoa: không được rỗng
@@ -438,7 +432,8 @@
         - Ten_mh: duy nhất và không được rỗng
         - Sotinchi: phải >= 1 và <= 10
     - HOCPHAN: Mahp>0
-    </aside>
+
+    **Tạo bảng:**
     
     - **Bảng `SVIEN`**
         
