@@ -40,6 +40,22 @@
     * Bước 1: `git fetch origin` (tải dữ liệu xuống, chưa sửa file local)
     * Bước 2: `git reset --hard origin/main` (ghi đè)
 
+- Kiểm tra repo trên máy về repo trên Github có khớp nhau không:
+  
+  ```bash
+  git status
+  git remote -v
+  git fetch origin
+  git status -sb
+  ```
+
+  + `git fetch origin`: cập nhật thông tin repo từ Github nhưng không làm thay đổi repo trên máy
+  + `git status -sb`: cho biết kết quả so sánh:
+    + `## main...origin/main`: hai nhánh đang cùng commit.
+    + `## main...origin/main [ahead 2]`: máy có 2 commit chưa đẩy lên GitHub.
+    + `## main...origin/main [behind 3]`: GitHub có 3 commit máy chưa lấy về.
+    + `[ahead 1, behind 2]`: hai bên đều có commit riêng.
+
 - Merge:
   + Bước 1: Đứng ở nhánh đích
   + Bước 2: Hợp nhất nhánh khác vào nhánh hiện tại:
